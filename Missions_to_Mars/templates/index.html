@@ -10,7 +10,7 @@
     </head>
 <body>
     <div class="container">
-        <div class="jumbotron text-center">
+        <div class="jumbotron text-center border-bottom">
             <h1>Mission to Mars</h1>
             <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Scrape New Data</a></p>
         </div>
@@ -26,13 +26,13 @@
             </div>
         </div>
         <div class="row" id="mars-featured-image">
-            <div class="col-md-8">
+            <div class="col-md-8 border">
                 <h3>Featured Mars Image</h3>
-                <img src= "{{ mars.featured_image_url }}" style="width:200px;height:300px;" alt="Featured Image of Mars" class="img-responsive" >
+                <img src= "{{ mars.featured_image_url }}" alt="Featured Image of Mars" class="border" >
             </div>
             <div class="col-md-4">
                 <h4>Mars Facts</h4>
-                <div class="table-responsive">
+                <div class="border">
                 <table>
                     {{ mars.facts_html | safe }}
                 </table>
